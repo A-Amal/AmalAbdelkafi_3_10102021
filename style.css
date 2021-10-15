@@ -80,10 +80,7 @@ header{
     margin: auto 80px;
     
 }
-footer{
-    background-color: #353535;
-    color: white;
-}
+
 #restaurants{
     width: 100%;
     height: auto;
@@ -107,4 +104,46 @@ footer{
     height: 400px;
     width: 100%;
     border-radius: 30px 30px 0 0;
+}
+.desc-rest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.desc{
+    width: 60%;
+    margin: auto 30px;
+}
+.desc h3{
+    margin-block-end: 0.2em;
+    font-size: 45px;
+}
+.desc p{
+    margin-block-start: 0em;
+    font-size: 40px;
+}
+.icon-heart{
+    width: 30%;
+    
+}
+.icon-heart i{
+    padding-left: 50%;
+    font-size: 50px;
+    margin-top: 20px;
+}
+footer{
+    background-color: #353535;
+    color: white;
+    padding: 50px;
+    bottom: 0;
+}
+footer h4{
+    font-size: 45px;
+    font-style: italic;
+    margin-block-start: 0em;
+}
+footer h5 i{
+    font-size: 10px;
+    width: 20px;
+    margin-right: 20px;
 }
