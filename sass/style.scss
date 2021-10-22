@@ -40,10 +40,12 @@ header{
         margin: auto;
         width: 90%;
         text-align: end;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        font-weight: bold;
+       /* font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-weight: bold;*/
     }
-
+    i{
+        margin-right: 20px;
+    }
 }
 #description{
     width: 100%;
@@ -109,8 +111,8 @@ h2{
         font-size: 28px;
         margin: auto 0px;
         font-weight: bold;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        font-weight: bold;
+        /*font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-weight: bold;*/
         i{
             width: 30px;
             margin: auto 80px;
@@ -192,7 +194,7 @@ h2{
                 p{
                     margin-block-start: 0em;
                     font-size: 25px;
-                    font-family: Roboto, Arial, Helvetica, sans-serif;
+                    /*font-family: Roboto, Arial, Helvetica, sans-serif;*/
                 }
             }
             .icon-heart{
