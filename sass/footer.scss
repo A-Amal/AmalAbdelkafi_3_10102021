@@ -1,0 +1,30 @@
+footer{
+    background-color: #353535;
+    color: $white;
+    padding: 30px 20px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    h4{
+        width: 100%;
+        font-size: 30px;
+        font-style: italic;
+        margin-block-start: 0em;
+        margin-block-end: 0.5em;
+        margin: auto;
+        text-align: center;
+    }
+    h5 {
+        i{
+            font-size: 20px;
+            width: 20px;
+            margin-right: 20px;
+        }  
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}
