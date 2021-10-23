@@ -1,0 +1,19 @@
+
+.btn{
+    width: 50%;
+    background: $btn-color;
+    border-radius: 50px;
+    height: 100px;
+    font-size: 37px;
+    color: $white;
+    border: none;
+    transform: scale(1);
+    transition-property: transform;
+    opacity: 1;
+    @extend %Shadow;
+    &:hover{  
+        transform: scale(1.15);
+        opacity: 0.8;
+        @extend %Shadow-hover;
+    }
+}

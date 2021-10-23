@@ -1,0 +1,104 @@
+@import "variable.scss";
+body{
+    width: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+@import "header-menu.scss";
+
+.image-restaurant{
+    img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }  
+}
+.container-menu{
+    position: relative;
+    background-color: #F6F6F6;
+    margin-top: -80px;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+    .title-menu{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 50px;
+        h2{
+            font-size: 40px;
+            font-family: Shrikhand, Arial, Helvetica, sans-serif;
+        }
+        p{
+            text-align: center;
+            margin-right: 20px;
+        }
+        @import "icon-heart.scss";
+    }
+    .menu{
+        margin:auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        .entrees ,  .plats , .desserts{
+            width: 100%;
+            h3{
+                font-size: 25px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    margin-top: 35px;
+                    width: 45px;
+                    height: 3px;
+                    left: 55px;
+                    background-color: #99e2d0;
+                }
+            }
+            .element{
+                width: 100%;
+                background-color: $white;
+                border-radius: 20px;
+                @extend %Shadow-card;
+                height: 90px;
+                margin: 20px auto;
+                display: flex;
+                font-size: 25px;
+                justify-content: space-between;
+                .desc-repas{
+                    margin: auto 20px;
+                    h4{
+                        margin-block-start:0.5em;
+                        margin-block-end: 0.5em;
+                    }
+                    p{
+                        margin-block-start: 0em;
+                        margin-block-end: 0.5em;
+                    }
+                }
+                .prix-repas{
+                    margin: auto 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .container-button{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    @import "btn.scss";
+    .btn{
+        width: 40%;
+        height: 70px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+@import "footer.scss";

@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+.container-menu .btn {
+  box-shadow: 0px 6px 8px 3px #DBDBDB;
+}
+
+.container-menu .btn:hover {
+  box-shadow: 0px 6px 8px 3px #b4b4b4;
+}
+
+.container-menu .menu .entrees .element, .container-menu .menu .plats .element, .container-menu .menu .desserts .element {
+  box-shadow: 4px 5px 6px 4px #e5e5e5;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+header .icon-arrow-left {
+  width: 20%;
+  margin: auto 30px;
+  font-size: 40px;
+  text-align: left;
+}
+header .icon-arrow-left a {
+  color: black;
+  text-decoration: none;
+}
+header .logo {
+  width: 40%;
+  height: 50%;
+  margin: auto 20px;
+}
+
+.image-restaurant img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.container-menu {
+  position: relative;
+  background-color: #F6F6F6;
+  margin-top: -80px;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+}
+.container-menu .title-menu {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+.container-menu .title-menu h2 {
+  font-size: 40px;
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+}
+.container-menu .title-menu p {
+  text-align: center;
+  margin-right: 20px;
+}
+.container-menu .title-menu .icon-heart {
+  width: 30%;
+}
+.container-menu .title-menu .icon-heart:hover > i.fas {
+  display: flex;
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 10;
+}
+.container-menu .title-menu .icon-heart:hover > i.far {
+  display: none;
+}
+.container-menu .title-menu .icon-heart i {
+  padding-left: 50%;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.container-menu .title-menu .icon-heart i.fas {
+  display: none;
+  background: white;
+  -webkit-background-clip: text;
+  color: 2px black solid;
+  z-index: 10;
+}
+.container-menu .title-menu .icon-heart i.far:hover {
+  display: none;
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 10;
+}
+.container-menu .menu {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.container-menu .menu .entrees, .container-menu .menu .plats, .container-menu .menu .desserts {
+  width: 100%;
+}
+.container-menu .menu .entrees h3, .container-menu .menu .plats h3, .container-menu .menu .desserts h3 {
+  font-size: 25px;
+}
+.container-menu .menu .entrees h3::after, .container-menu .menu .plats h3::after, .container-menu .menu .desserts h3::after {
+  content: "";
+  position: absolute;
+  margin-top: 35px;
+  width: 45px;
+  height: 3px;
+  left: 55px;
+  background-color: #99e2d0;
+}
+.container-menu .menu .entrees .element, .container-menu .menu .plats .element, .container-menu .menu .desserts .element {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  height: 90px;
+  margin: 20px auto;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-between;
+}
+.container-menu .menu .entrees .element .desc-repas, .container-menu .menu .plats .element .desc-repas, .container-menu .menu .desserts .element .desc-repas {
+  margin: auto 20px;
+}
+.container-menu .menu .entrees .element .desc-repas h4, .container-menu .menu .plats .element .desc-repas h4, .container-menu .menu .desserts .element .desc-repas h4 {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+.container-menu .menu .entrees .element .desc-repas p, .container-menu .menu .plats .element .desc-repas p, .container-menu .menu .desserts .element .desc-repas p {
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+}
+.container-menu .menu .entrees .element .prix-repas, .container-menu .menu .plats .element .prix-repas, .container-menu .menu .desserts .element .prix-repas {
+  margin: auto 30px;
+  font-weight: bold;
+}
+.container-menu .container-button {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.container-menu .btn {
+  width: 50%;
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  border-radius: 50px;
+  height: 100px;
+  font-size: 37px;
+  color: white;
+  border: none;
+  transform: scale(1);
+  transition-property: transform;
+  opacity: 1;
+}
+.container-menu .btn:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+.container-menu .btn {
+  width: 40%;
+  height: 70px;
+  margin: auto;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 30px 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer h4 {
+  width: 100%;
+  font-size: 30px;
+  font-style: italic;
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+  margin: auto;
+  text-align: center;
+}
+footer h5 i {
+  font-size: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style-menu.css.map */

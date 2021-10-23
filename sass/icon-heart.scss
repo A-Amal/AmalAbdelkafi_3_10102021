@@ -1,0 +1,36 @@
+.icon-heart{
+    width: 30%;
+    &:hover{
+        >i.fas{
+            display: flex;
+            background: $btn-color;
+            -webkit-background-clip: text;
+            color: transparent;
+            z-index: 10;
+        }
+        > i.far{
+            display: none;
+        }
+    }
+    i{
+        padding-left: 50%;
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    i.fas{
+        display: none;
+        background: $white;
+        -webkit-background-clip: text;
+        color: 2px black solid;
+        z-index: 10;
+    }
+    i.far{
+        &:hover{
+            display: none;
+            background: $btn-color;
+            -webkit-background-clip: text;
+            color: transparent;
+            z-index: 10;
+        }
+    }
+}

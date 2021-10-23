@@ -1,21 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 
-$Primaire : #9356DC;
-$Secondaire: #FF79DA;
-$Tertiaire: #99E2D0;
-$white:white;
-$btn-color:linear-gradient(to right bottom, $Secondaire , $Primaire);
-%Shadow{
-    box-shadow:0px 6px 8px 3px #DBDBDB;
-}
-%Shadow-hover{
-    box-shadow:0px 6px 8px 3px #b4b4b4;
-}
-%Shadow-card{
-    box-shadow:4px 5px 6px 4px rgb(229 229 229);
-}
-
+@import "variable.scss";
 body{
     width: 100%;
     margin: 0px;
@@ -69,24 +53,7 @@ header{
         font-weight: bold;
     }
 }
-.btn{
-    width: 50%;
-    background: $btn-color;
-    border-radius: 50px;
-    height: 100px;
-    font-size: 37px;
-    color: $white;
-    border: none;
-    transform: scale(1);
-    transition-property: transform;
-    opacity: 1;
-    @extend %Shadow;
-    &:hover{  
-        transform: scale(1.15);
-        opacity: 0.8;
-        @extend %Shadow-hover;
-    }
-}
+@import "btn.scss";
 h2{
     width: 100%;
     margin: 50px;
@@ -151,6 +118,10 @@ h2{
         width: 90%;
         margin: 30px 0px; 
     }
+    a{
+        text-decoration: none;
+        color: black;
+    }
     .restaurant-card{
         width: 45%;
         height: 400px;
@@ -197,42 +168,7 @@ h2{
                     /*font-family: Roboto, Arial, Helvetica, sans-serif;*/
                 }
             }
-            .icon-heart{
-                width: 30%;
-                &:hover{
-                    >i.fas{
-                        display: flex;
-                        background: $btn-color;
-                        -webkit-background-clip: text;
-                        color: transparent;
-                        z-index: 10;
-                    }
-                    > i.far{
-                        display: none;
-                    }
-                }
-                i{
-                    padding-left: 50%;
-                    font-size: 50px;
-                    margin-top: 20px;
-                }
-                i.fas{
-                    display: none;
-                    background: $white;
-                    -webkit-background-clip: text;
-                    color: 2px black solid;
-                    z-index: 10;
-                }
-                i.far{
-                    &:hover{
-                        display: none;
-                        background: $btn-color;
-                        -webkit-background-clip: text;
-                        color: transparent;
-                        z-index: 10;
-                    }
-                }
-            }
+           @import "icon-heart.scss";
         }   
     }
 }
