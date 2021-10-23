@@ -29,9 +29,11 @@ body{
             font-size: 40px;
             font-family: Shrikhand, Arial, Helvetica, sans-serif;
         }
+        
         p{
             text-align: center;
-            margin-right: 20px;
+            margin-right: 50px;
+            width: 10% !important;
         }
         @import "icon-heart.scss";
     }
