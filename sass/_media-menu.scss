@@ -23,6 +23,14 @@
                     .element{
                         height: 150px;
                         border-radius: 30px;
+                        .desc-repas{
+                            width: 80% !important;
+                            margin-block-start: 0.5em;
+                        }
+                        .prix-repas{
+                            width: 120px!important;
+                            margin: auto 10px 0 auto;
+                        }
                         .check-animation{
                             height: 130px;
                             i{
@@ -30,6 +38,11 @@
                             }
                         }
                         &:hover {
+                            .desc-repas{
+                                h4, p{
+                                    max-width: 320px;
+                                }   
+                            }
                             .check-animation {
                                 width: 130px;
                                 i {  
@@ -37,15 +50,10 @@
                                 }
                             }
                         }
-                        .desc-repas{
-                            margin-block-start: 0.5em;
-                        }
-                        .prix-repas{
-                            margin: auto 30px 20px 30px;
-                        }
+                        
                     }
                     h4, p{
-                        font-size: 45px !important;
+                        font-size: 40px !important;
                     }
                 }
             }

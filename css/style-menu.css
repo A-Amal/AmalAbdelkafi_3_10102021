@@ -175,6 +175,7 @@ header .logo {
   margin: auto 20px;
 }
 .container-menu .menu .entrees div .element .desc-repas h4, .container-menu .menu .plats div .element .desc-repas h4, .container-menu .menu .desserts div .element .desc-repas h4 {
+  max-width: 70%;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   white-space: nowrap;
@@ -182,7 +183,7 @@ header .logo {
   text-overflow: ellipsis;
 }
 .container-menu .menu .entrees div .element .desc-repas p, .container-menu .menu .plats div .element .desc-repas p, .container-menu .menu .desserts div .element .desc-repas p {
-  max-width: 90%;
+  max-width: 70%;
   margin-block-start: 0em;
   margin-block-end: 0.5em;
   white-space: nowrap;
@@ -190,7 +191,8 @@ header .logo {
   text-overflow: ellipsis;
 }
 .container-menu .menu .entrees div .element .prix-repas, .container-menu .menu .plats div .element .prix-repas, .container-menu .menu .desserts div .element .prix-repas {
-  margin: auto 30px;
+  width: 20%;
+  margin: auto 0;
   font-weight: bold;
 }
 .container-menu .menu .entrees div .element .check-animation, .container-menu .menu .plats div .element .check-animation, .container-menu .menu .desserts div .element .check-animation {
@@ -306,11 +308,22 @@ footer a {
     height: 150px;
     border-radius: 30px;
   }
+  .container-menu .menu .entrees div .element .desc-repas, .container-menu .menu .plats div .element .desc-repas, .container-menu .menu .desserts div .element .desc-repas {
+    width: 80% !important;
+    margin-block-start: 0.5em;
+  }
+  .container-menu .menu .entrees div .element .prix-repas, .container-menu .menu .plats div .element .prix-repas, .container-menu .menu .desserts div .element .prix-repas {
+    width: 120px !important;
+    margin: auto 10px 0 auto;
+  }
   .container-menu .menu .entrees div .element .check-animation, .container-menu .menu .plats div .element .check-animation, .container-menu .menu .desserts div .element .check-animation {
     height: 130px;
   }
   .container-menu .menu .entrees div .element .check-animation i, .container-menu .menu .plats div .element .check-animation i, .container-menu .menu .desserts div .element .check-animation i {
     font-size: 45px;
+  }
+  .container-menu .menu .entrees div .element:hover .desc-repas h4, .container-menu .menu .entrees div .element:hover .desc-repas p, .container-menu .menu .plats div .element:hover .desc-repas h4, .container-menu .menu .plats div .element:hover .desc-repas p, .container-menu .menu .desserts div .element:hover .desc-repas h4, .container-menu .menu .desserts div .element:hover .desc-repas p {
+    max-width: 320px;
   }
   .container-menu .menu .entrees div .element:hover .check-animation, .container-menu .menu .plats div .element:hover .check-animation, .container-menu .menu .desserts div .element:hover .check-animation {
     width: 130px;
@@ -318,14 +331,8 @@ footer a {
   .container-menu .menu .entrees div .element:hover .check-animation i, .container-menu .menu .plats div .element:hover .check-animation i, .container-menu .menu .desserts div .element:hover .check-animation i {
     transform: rotate(360deg);
   }
-  .container-menu .menu .entrees div .element .desc-repas, .container-menu .menu .plats div .element .desc-repas, .container-menu .menu .desserts div .element .desc-repas {
-    margin-block-start: 0.5em;
-  }
-  .container-menu .menu .entrees div .element .prix-repas, .container-menu .menu .plats div .element .prix-repas, .container-menu .menu .desserts div .element .prix-repas {
-    margin: auto 30px 20px 30px;
-  }
   .container-menu .menu .entrees div h4, .container-menu .menu .entrees div p, .container-menu .menu .plats div h4, .container-menu .menu .plats div p, .container-menu .menu .desserts div h4, .container-menu .menu .desserts div p {
-    font-size: 45px !important;
+    font-size: 40px !important;
   }
   .container-menu footer h5 i {
     font-size: 20px !important;
