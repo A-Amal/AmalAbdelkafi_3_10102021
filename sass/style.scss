@@ -1,9 +1,9 @@
 
 @import "variable.scss";
 /* loading*/
-header, #description, #Fonctionnement,#restaurants, footer {
+header, #description, #Fonctionnement, #restaurants, footer {
     animation: page 3s ease-in-out;
-    display: none;
+   
 }
 .loading {
     background-color: #DBDBDB;
@@ -18,24 +18,24 @@ header, #description, #Fonctionnement,#restaurants, footer {
     left: 0;
     right:0;
     .loader {
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         display: inline-block;
         vertical-align: middle;
         position: relative; 
     }
     .loader-quart {
-        border-radius: 50px;
-        border: 6px solid rgba(255, 255, 255, 0.4);
+        border-radius: 100px;
+        border: 10px solid rgba(255, 255, 255, 0.4);
         &:after {
             content: '';
             position: absolute;
-            top: -6px;
-            left: -6px;
-            bottom: -6px;
-            right: -6px;
-            border-radius: 50px;
-            border: 6px solid transparent;
+            top: -10px;
+            left: -10px;
+            bottom: -10px;
+            right: -10px;
+            border-radius: 100px;
+            border: 10px solid transparent;
             border-top-color:$Primaire;
             animation: spin 3s linear infinite; 
         }
@@ -102,28 +102,38 @@ header{
     padding: 30px 0;
     font-size:40px ;
     p{
-        margin: auto;
-        width: 90%;
+        margin: auto 5px auto 100px;
+        width: 80%;
         text-align: end;
-       /*font-weight: bold;*/
-    }
-    i{
+       i{
         margin-right: 20px;
+        }
+       input {
+            border: none;
+            padding-left: 15px;
+            height: 50px;
+            font-size: 25px;
+            font-weight: 700;
+            color: #353535;
+            background-color: rgba(255, 255, 255, 0);
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            &:focus {
+                outline: none;
+            }
+        }
     }
+    
 }
 #description{
     width: 100%;
     background-color:#F6F6F6;
     font-size:35px ;
     text-align: center;
-    padding: 30px 0;
+    padding: 60px 0;
     margin: auto;
     h3{
         margin: 0px 150px;
         font-size: 1.5em;
-        /*
-        font-family: Shrikhand, Arial, Helvetica, sans-serif;
-        font-weight: lighter;*/
     }
     p{
         margin-inline-end: 100px;
