@@ -12,26 +12,40 @@
         .menu{
             .entrees ,  .plats , .desserts{
                 h3{
-                    font-size: 45px;
+                    font-size: 45px !important;
                     &:after{
-                        margin-top: 55px;
-                        width: 75px;
+                        margin-top: 65px !important;
+                        width: 85px !important;
                     }
                 }
                 div{
-                    height: 170px;
+                    height: 170px !important;
                     .element{
                         height: 150px;
                         border-radius: 30px;
+                        .check-animation{
+                            height: 130px;
+                            i{
+                                font-size: 45px;
+                            }
+                        }
+                        &:hover {
+                            .check-animation {
+                                width: 130px;
+                                i {  
+                                    transform: rotate(360deg); 
+                                }
+                            }
+                        }
                         .desc-repas{
-                            margin-block-start: 1em;
+                            margin-block-start: 0.5em;
                         }
                         .prix-repas{
                             margin: auto 30px 20px 30px;
                         }
                     }
                     h4, p{
-                        font-size: 35px;
+                        font-size: 45px !important;
                     }
                 }
             }
