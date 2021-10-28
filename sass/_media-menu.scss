@@ -3,10 +3,10 @@
         .title-menu {
             padding: 0px;
             h2{
-                font-size: 50px;
+                font-size: 70px !important;
             }
             p {
-            margin-right: 50px !important;
+            margin-right: 90px !important;
             }
         }
         .menu{
@@ -35,6 +35,9 @@
                     }
                 }
             }
+        }
+        footer h5 i{
+            font-size: 20px !important;         
         }
     }
 }
@@ -70,6 +73,12 @@
                     .element{
                         height: 130px;
                         border-radius: 30px;
+                        .check-animation{
+                            height: 130px;
+                            i{
+                                margin: 55px auto;
+                            }
+                        }
                     }
                     h4{
                         font-size: 30px;
@@ -77,6 +86,7 @@
                     p{
                         font-size: 25px; 
                     }
+                    
                 }
                 
             }
