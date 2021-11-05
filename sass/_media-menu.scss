@@ -87,9 +87,15 @@
                 font-size: 20px;
             }
         }
-        footer h5 i{
-            font-size: 20px !important;         
+    }
+    footer{
+        flex-direction: column !important;
+        h4{
+            text-align: left;
         }
+        h5 i{
+        font-size: 20px !important;
+        }        
     }
 }
 @media all and(max-width:1080px) and (min-width:767px) {
