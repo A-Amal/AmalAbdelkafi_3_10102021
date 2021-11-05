@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 .step, .btn {
   box-shadow: 0px 6px 8px 3px #DBDBDB;
 }
@@ -197,8 +195,6 @@ h2 {
   font-size: 28px;
   margin: auto 0px;
   font-weight: bold;
-  /*font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-weight: bold;*/
 }
 .step p i {
   width: 30px;
@@ -493,6 +489,7 @@ footer a {
     font-size: 35px;
   }
   #restaurants .restaurant-card img {
+    clip: rect(100px, 800px, 400px, 0px);
     height: 400px;
     width: 100%;
     border-radius: 30px 30px 0 0;
