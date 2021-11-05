@@ -4,6 +4,7 @@
         >i.fas{
             display: flex;
             background: $btn-color;
+            background-clip:text;
             -webkit-background-clip: text;
             color: transparent;
             z-index: 10;
@@ -20,14 +21,16 @@
     i.fas{
         display: none;
         background: $white;
+        background-clip:text;
         -webkit-background-clip: text;
-        color: 2px black solid;
+        color:black;
         z-index: 10;
     }
     i.far{
         &:hover{
             display: none;
             background: $btn-color;
+            background-clip:text;
             -webkit-background-clip: text;
             color: transparent;
             z-index: 10;

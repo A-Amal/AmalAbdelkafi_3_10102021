@@ -54,7 +54,7 @@ header, #description, #Fonctionnement, #restaurants, footer {
   animation: spin 3s linear infinite;
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -285,7 +285,6 @@ h2 {
 #restaurants .restaurant-card .desc-rest .desc p {
   margin-block-start: 0em;
   font-size: 25px;
-  /*font-family: Roboto, Arial, Helvetica, sans-serif;*/
 }
 #restaurants .restaurant-card .desc-rest .icon-heart {
   width: 30%;
@@ -293,6 +292,7 @@ h2 {
 #restaurants .restaurant-card .desc-rest .icon-heart:hover > i.fas {
   display: flex;
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   z-index: 10;
@@ -308,13 +308,15 @@ h2 {
 #restaurants .restaurant-card .desc-rest .icon-heart i.fas {
   display: none;
   background: white;
+  background-clip: text;
   -webkit-background-clip: text;
-  color: 2px black solid;
+  color: black;
   z-index: 10;
 }
 #restaurants .restaurant-card .desc-rest .icon-heart i.far:hover {
   display: none;
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   z-index: 10;
@@ -349,7 +351,7 @@ footer a {
   color: white;
 }
 
-@media (max-device-width: 767px) {
+@media (max-width: 767px) {
   .loading .loader {
     width: 150px !important;
     height: 150px !important;
@@ -491,7 +493,6 @@ footer a {
     font-size: 35px;
   }
   #restaurants .restaurant-card img {
-    clip: rect(100px, 800px, 400px, 0px);
     height: 400px;
     width: 100%;
     border-radius: 30px 30px 0 0;

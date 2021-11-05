@@ -42,7 +42,7 @@ header, #description, #Fonctionnement, #restaurants, footer {
     }
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
     from {
         -webkit-transform: rotate(0deg); }
 
@@ -255,7 +255,6 @@ h2{
                 p{
                     margin-block-start: 0em;
                     font-size: 25px;
-                    /*font-family: Roboto, Arial, Helvetica, sans-serif;*/
                 }
             }
            @import "icon-heart.scss";
