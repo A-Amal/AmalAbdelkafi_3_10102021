@@ -179,17 +179,11 @@ header .logo {
   max-width: 70%;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .container-menu .menu .entrees div .element .desc-repas p, .container-menu .menu .plats div .element .desc-repas p, .container-menu .menu .desserts div .element .desc-repas p {
   max-width: 70%;
   margin-block-start: 0em;
   margin-block-end: 0.5em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .container-menu .menu .entrees div .element .prix-repas, .container-menu .menu .plats div .element .prix-repas, .container-menu .menu .desserts div .element .prix-repas {
   width: 20%;
@@ -286,54 +280,79 @@ footer a {
 }
 
 @media (max-width: 766px) {
+  header .icon-arrow-left {
+    font-size: 20px;
+  }
+
+  .image-restaurant img {
+    height: auto;
+  }
+
   .container-menu .title-menu {
     padding: 0px;
   }
   .container-menu .title-menu h2 {
-    font-size: 70px !important;
+    font-size: 25px !important;
   }
   .container-menu .title-menu p {
-    margin-right: 90px !important;
+    margin-right: 30px !important;
+  }
+  .container-menu .title-menu .icon-heart i {
+    padding-left: 5%;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .container-menu .menu .entrees, .container-menu .menu .plats, .container-menu .menu .desserts {
+    flex-direction: column;
   }
   .container-menu .menu .entrees h3, .container-menu .menu .plats h3, .container-menu .menu .desserts h3 {
-    font-size: 45px !important;
+    font-size: 30px !important;
   }
   .container-menu .menu .entrees h3:after, .container-menu .menu .plats h3:after, .container-menu .menu .desserts h3:after {
-    margin-top: 65px !important;
-    width: 85px !important;
+    margin-top: 45px !important;
+    width: 65px !important;
+    left: 20px;
   }
   .container-menu .menu .entrees div, .container-menu .menu .plats div, .container-menu .menu .desserts div {
-    height: 170px !important;
+    height: 80px !important;
+    width: 100%;
   }
   .container-menu .menu .entrees div .element, .container-menu .menu .plats div .element, .container-menu .menu .desserts div .element {
-    height: 150px;
+    height: 100px;
     border-radius: 30px;
   }
   .container-menu .menu .entrees div .element .desc-repas, .container-menu .menu .plats div .element .desc-repas, .container-menu .menu .desserts div .element .desc-repas {
     width: 80% !important;
     margin-block-start: 0.5em;
+    margin: auto 0 auto 10px;
+  }
+  .container-menu .menu .entrees div .element .desc-repas h4, .container-menu .menu .entrees div .element .desc-repas p, .container-menu .menu .plats div .element .desc-repas h4, .container-menu .menu .plats div .element .desc-repas p, .container-menu .menu .desserts div .element .desc-repas h4, .container-menu .menu .desserts div .element .desc-repas p {
+    font-size: 18px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .container-menu .menu .entrees div .element .prix-repas, .container-menu .menu .plats div .element .prix-repas, .container-menu .menu .desserts div .element .prix-repas {
-    width: 120px !important;
-    margin: auto 10px 0 auto;
+    margin: auto 10px 20px auto;
   }
   .container-menu .menu .entrees div .element .check-animation, .container-menu .menu .plats div .element .check-animation, .container-menu .menu .desserts div .element .check-animation {
-    height: 130px;
+    height: 80px;
   }
   .container-menu .menu .entrees div .element .check-animation i, .container-menu .menu .plats div .element .check-animation i, .container-menu .menu .desserts div .element .check-animation i {
-    font-size: 45px;
+    font-size: 20px;
   }
-  .container-menu .menu .entrees div .element:hover .desc-repas h4, .container-menu .menu .entrees div .element:hover .desc-repas p, .container-menu .menu .plats div .element:hover .desc-repas h4, .container-menu .menu .plats div .element:hover .desc-repas p, .container-menu .menu .desserts div .element:hover .desc-repas h4, .container-menu .menu .desserts div .element:hover .desc-repas p {
-    max-width: 320px;
+  .container-menu .menu .entrees div .element:hover .desc-repas, .container-menu .menu .plats div .element:hover .desc-repas, .container-menu .menu .desserts div .element:hover .desc-repas {
+    width: 70% !important;
   }
   .container-menu .menu .entrees div .element:hover .check-animation, .container-menu .menu .plats div .element:hover .check-animation, .container-menu .menu .desserts div .element:hover .check-animation {
-    width: 130px;
+    width: 150px;
   }
   .container-menu .menu .entrees div .element:hover .check-animation i, .container-menu .menu .plats div .element:hover .check-animation i, .container-menu .menu .desserts div .element:hover .check-animation i {
     transform: rotate(360deg);
   }
-  .container-menu .menu .entrees div h4, .container-menu .menu .entrees div p, .container-menu .menu .plats div h4, .container-menu .menu .plats div p, .container-menu .menu .desserts div h4, .container-menu .menu .desserts div p {
-    font-size: 40px !important;
+  .container-menu .container-button .btn {
+    width: 70%;
+    font-size: 20px;
   }
   .container-menu footer h5 i {
     font-size: 20px !important;

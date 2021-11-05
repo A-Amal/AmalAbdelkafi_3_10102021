@@ -1,50 +1,76 @@
 @media(max-width:766px){
+    header{
+        .icon-arrow-left{
+            font-size: 20px;
+        }
+    }
+    .image-restaurant{
+        img{
+            height: auto;
+        }  
+    }
     .container-menu {
         .title-menu {
             padding: 0px;
             h2{
-                font-size: 70px !important;
+                font-size: 25px !important;
             }
             p {
-            margin-right: 90px !important;
+            margin-right: 30px !important;
+            }
+            .icon-heart{
+                i{
+                    padding-left: 5%;
+                    font-size: 30px;
+                    margin-top: 10px;
+                }
             }
         }
+        
         .menu{
             .entrees ,  .plats , .desserts{
+                flex-direction: column;
                 h3{
-                    font-size: 45px !important;
+                    font-size: 30px !important;
                     &:after{
-                        margin-top: 65px !important;
-                        width: 85px !important;
+                        margin-top: 45px !important;
+                        width: 65px !important;
+                        left: 20px;
                     }
                 }
                 div{
-                    height: 170px !important;
+                    height: 80px !important;
+                    width: 100%;
                     .element{
-                        height: 150px;
-                        border-radius: 30px;
+                        height: 100px;
+                        border-radius: 30px;                        
                         .desc-repas{
                             width: 80% !important;
                             margin-block-start: 0.5em;
+                            margin: auto 0 auto 10px;
+                            h4, p{
+                                font-size: 18px !important;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
                         }
                         .prix-repas{
-                            width: 120px!important;
-                            margin: auto 10px 0 auto;
+                            margin: auto 10px 20px auto;
+                           
                         }
                         .check-animation{
-                            height: 130px;
+                            height: 80px;
                             i{
-                                font-size: 45px;
+                                font-size: 20px;
                             }
                         }
                         &:hover {
                             .desc-repas{
-                                h4, p{
-                                    max-width: 320px;
-                                }   
+                                width: 70% !important;
                             }
                             .check-animation {
-                                width: 130px;
+                                width: 150px;
                                 i {  
                                     transform: rotate(360deg); 
                                 }
@@ -52,10 +78,13 @@
                         }
                         
                     }
-                    h4, p{
-                        font-size: 40px !important;
-                    }
                 }
+            }
+        }
+        .container-button{
+            .btn{
+                width: 70%;
+                font-size: 20px;
             }
         }
         footer h5 i{

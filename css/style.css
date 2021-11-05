@@ -379,17 +379,13 @@ footer a {
     border-top: 6px #CFCFCF solid;
   }
   header #localisation p {
-    width: 100%;
-    display: inline;
-    margin: auto;
-    font-size: larger;
-    margin: auto 0 auto 320px;
+    width: 60%;
+    text-align: center;
+    margin: auto 5px auto 50px;
   }
   header #localisation p input {
-    font-size: 35px;
-  }
-  header #localisation p i {
-    margin-right: 30px;
+    font-size: 20px;
+    width: 50%;
   }
 
   h2 {
@@ -400,27 +396,25 @@ footer a {
   #description {
     width: 100%;
     background-color: #F6F6F6;
-    font-size: 35px;
     text-align: center;
-    padding: 70px 0;
     margin: auto;
     border: none;
   }
   #description h3 {
-    margin: 0px 150px;
-    font-size: 1.5em;
+    font-size: 25px;
+    margin: 20px !important;
   }
   #description p {
-    margin-inline-end: 100px;
-    margin-inline-start: 100px;
+    margin-inline-end: 50px;
+    margin-inline-start: 50px;
     font-size: 20px;
   }
   #description .btn {
-    width: 50%;
+    width: 80%;
     background: linear-gradient(to right bottom, #FF79DA, #9356DC);
     border-radius: 50px;
-    height: 100px;
-    font-size: 37px;
+    height: 70px;
+    font-size: 25px;
     color: white;
     border: none;
     box-shadow: 0px 12px 16px 3px #DBDBDB;
@@ -432,12 +426,13 @@ footer a {
     padding: 50px 0;
   }
   #Fonctionnement h2 {
-    width: 90%;
+    width: 70%;
+    font-size: 30px;
   }
 
   .step {
     width: 90%;
-    height: 150px;
+    height: 100px;
     background-color: #F5EDFF;
     border-radius: 50px;
     box-shadow: 0px 12px 16px 3px #DBDBDB;
@@ -445,18 +440,19 @@ footer a {
     display: flex;
   }
   .step p {
-    font-size: 40px;
+    font-size: 20px;
     margin: auto 0px;
     font-weight: bold;
   }
   .step p i {
-    width: 30px;
-    margin: auto 80px;
+    width: 25px;
+    margin: auto 30px;
   }
   .step .number-step {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     padding-top: 0px;
+    margin: auto -15px !important;
   }
 
   #restaurants {
@@ -475,22 +471,21 @@ footer a {
     background-color: #99E2D0;
     padding: 10px 20px;
     border-radius: 3px;
-    right: 80px;
+    right: 0px;
   }
   #restaurants h2 {
-    margin: 40px;
+    margin: 20px;
+    font-size: 25px;
   }
   #restaurants .restaurant-card {
     width: 90%;
-    height: 600px;
+    height: auto;
     border-radius: 30px;
     margin: 30px auto;
     background-color: white;
-    font-size: 35px;
+    font-size: 20px;
   }
   #restaurants .restaurant-card img {
-    clip: rect(100px, 800px, 400px, 0px);
-    height: 400px;
     width: 100%;
     border-radius: 30px 30px 0 0;
   }
@@ -505,18 +500,18 @@ footer a {
   }
   #restaurants .restaurant-card .desc-rest .desc h3 {
     margin-block-end: 0.2em;
-    font-size: 45px;
+    font-size: 20px;
   }
   #restaurants .restaurant-card .desc-rest .desc p {
     margin-block-start: 0em;
-    font-size: 40px;
+    font-size: 20px;
   }
   #restaurants .restaurant-card .desc-rest .icon-heart {
     width: 30%;
   }
   #restaurants .restaurant-card .desc-rest .icon-heart i {
     padding-left: 50%;
-    font-size: 50px;
+    font-size: 25px;
     margin-top: 20px;
   }
 
